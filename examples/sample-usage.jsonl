@@ -1,0 +1,2 @@
+{"task_id": "normalize_security_finding", "model": "example-frontier-model", "input_tokens": 900, "output_tokens": 220, "calls": 5000}
+{"task_id": "route_request", "model": "example-frontier-model", "input_tokens": 300, "output_tokens": 30, "calls": 20000}

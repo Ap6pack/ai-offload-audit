@@ -1,0 +1,35 @@
+name: Bug report
+description: Report an incorrect scan result, crash, or other defect.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What happened and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: Please use synthetic or public code only. Do not include secrets or proprietary source.
+      render: shell
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      placeholder: 0.1.0
+  - type: dropdown
+    id: tier
+    attributes:
+      label: Relevant tier
+      options:
+        - T0
+        - T1
+        - T2
+        - T3
+        - T4
+        - Hybrid/manual review
+        - Not sure

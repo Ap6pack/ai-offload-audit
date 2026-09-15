@@ -1,0 +1,26 @@
+name: AI Offload Audit
+
+on:
+  workflow_dispatch:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e .
+      - name: Run audit
+        run: ai-offload-audit . --out ai-offload-report.md --json ai-offload-report.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ai-offload-audit
+          path: |
+            ai-offload-report.md
+            ai-offload-report.json

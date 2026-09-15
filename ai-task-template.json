@@ -1,0 +1,35 @@
+{
+  "task_id": "replace_me",
+  "description": "What capability is being performed?",
+  "repos": [
+    "repo-name"
+  ],
+  "current": {
+    "tier": 4,
+    "provider": "provider",
+    "model": "model",
+    "calls_per_month": 0,
+    "input_tokens_per_call": 0,
+    "output_tokens_per_call": 0,
+    "monthly_cost_usd": 0
+  },
+  "risk": {
+    "impact_if_wrong": "low|medium|high|critical",
+    "failure_detectable": true,
+    "human_review_available": true
+  },
+  "candidate": {
+    "tier": 0,
+    "implementation": "library/tool/model",
+    "fallback_tier": 4
+  },
+  "evaluation": {
+    "gold_examples": 0,
+    "metric": "exact_match|precision_recall|task_specific",
+    "required_quality": 0.0,
+    "measured_quality": null,
+    "latency_ms_p50": null,
+    "escalation_rate": null
+  },
+  "decision": "RETEST"
+}

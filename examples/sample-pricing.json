@@ -1,0 +1,7 @@
+{
+  "_comment": "Replace example prices with your actual provider/model prices. Prices are USD per 1M tokens.",
+  "example-frontier-model": {
+    "input_per_million_usd": 1.0,
+    "output_per_million_usd": 4.0
+  }
+}

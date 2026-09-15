@@ -1,0 +1,38 @@
+{
+  "exclude_dirs": [
+    ".git",
+    ".venv",
+    "venv",
+    "node_modules",
+    "vendor",
+    "dist",
+    "build",
+    ".next",
+    "coverage",
+    "__pycache__",
+    "target",
+    ".idea",
+    ".vscode"
+  ],
+  "max_file_bytes": 2000000,
+  "context_lines": 18,
+  "extensions": [
+    ".py",
+    ".js",
+    ".jsx",
+    ".ts",
+    ".tsx",
+    ".go",
+    ".rs",
+    ".java",
+    ".cs",
+    ".sh",
+    ".bash",
+    ".zsh",
+    ".yml",
+    ".yaml",
+    ".json",
+    ".toml",
+    ".md"
+  ]
+}

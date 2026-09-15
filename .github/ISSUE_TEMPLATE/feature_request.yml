@@ -1,0 +1,17 @@
+name: Feature request
+description: Propose a new detector, provider pattern, report, or evaluation capability.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: usecase
+    attributes:
+      label: Use case
+      description: What capability or workflow should AI Offload Audit support?
+    validations:
+      required: true
+  - type: textarea
+    id: approach
+    attributes:
+      label: Suggested approach
+      description: Optional implementation ideas or examples.
